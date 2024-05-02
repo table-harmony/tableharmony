@@ -11,8 +11,10 @@ export function SiteHeader() {
   return (
     <header className="flex h-14 items-center justify-between">
       <div className="flex flex-col gap-2">
-        <h1 className="font-bold text-lg">TableHarmony</h1>
-        <h2 className="text-sm text-muted-foreground">web developer</h2>
+        <h1 className="font-black text-2xl">TableHarmony</h1>
+        <h2 className="text-sm font-semibold text-muted-foreground">
+          Web developer
+        </h2>
       </div>
       <nav className="flex gap-1">
         <Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
