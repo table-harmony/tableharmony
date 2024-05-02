@@ -1,3 +1,4 @@
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export default function MainLayout({
@@ -9,6 +10,7 @@ export default function MainLayout({
     <div className="container max-w-2xl mt-16 flex flex-col gap-10">
       <SiteHeader />
       {children}
+      <SiteFooter />
     </div>
   );
 }
