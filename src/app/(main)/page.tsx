@@ -1,107 +1,132 @@
-import Link from "next/link";
+import { Badge } from "@/components/badge";
+import { Icons } from "@/components/icons";
+import { Separator } from "@/components/ui/separator";
 
 export default function HomePage() {
   return (
     <main className="flex flex-col gap-4">
       <section className="flex flex-col gap-4">
-        <p className="font-semibold text-lg">Harmonial Projects</p>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://devharmony.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            DevHarmony
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            Bagrut project at the Alliance computer science program.
-          </span>
-        </div>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://blogharmony.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            BlogHarmony
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            Blog project with posts about the process of web development.
-          </span>
-        </div>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://github.com/table-harmony/aspharmony"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            AspHarmony
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            ASP.NET web application project.
-          </span>
-        </div>
+        <h3 className="font-semibold text-lg">Harmonial Projects</h3>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">DevHarmony</h4>
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/devharmony"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://devharmony.vercel.app/"
+                icon={<Icons.vercel className="h-3 w-3" />}
+                content="Vercel"
+              />
+            </div>
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Bagrut project at the Alliance computer science program
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">BlogHarmony</h4>
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/blogharmony"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://blogharmony.vercel.app/"
+                icon={<Icons.vercel className="h-3 w-3" />}
+                content="Vercel"
+              />
+            </div>
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Blog project with posts about the process of web development
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">AspHarmony</h4>
+            <Badge
+              href="https://github.com/table-harmony/aspharmony"
+              icon={<Icons.github className="h-3 w-3" />}
+              content="Github"
+            />
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            ASP.NET web application project
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">GamingHarmony</h4>
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/gamingharmony"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://gamingharmony.vercel.app/"
+                icon={<Icons.vercel className="h-3 w-3" />}
+                content="Vercel"
+              />
+            </div>
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Gaming hub plenty of games
+          </footer>
+        </article>
       </section>
+      <Separator />
       <section className="flex flex-col gap-4">
-        <p className="font-semibold text-lg">Adventurous Games</p>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://github.com/table-harmony/breakoutadventure"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            BreakoutAdventure
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            My first game using pygame.
-          </span>
-        </div>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://github.com/table-harmony/chessadventure"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            ChessAdventure
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            Very poorly designed Chess application.
-          </span>
-        </div>
+        <h3 className="font-semibold text-lg">Adventurous Games</h3>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">GamingAdventures</h4>
+            <Badge
+              href="https://github.com/table-harmony/gamingadventures"
+              icon={<Icons.github className="h-3 w-3" />}
+              content="Github"
+            />
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Lots of cool games with python library PYGAME
+          </footer>
+        </article>
       </section>
+      <Separator />
       <section className="flex flex-col gap-4">
-        <p className="font-semibold text-lg">Others</p>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://github.com/table-harmony/nyan-cat"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            NyanCat
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            Made out of pure CSS and HTML.
-          </span>
-        </div>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="https://github.com/table-harmony/cards"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            Cards
-          </Link>
-          <span className="text-muted-foreground text-sm">
-            Made of HTML, CSS and JS. Heavily inspired from Hyperplexed.
-          </span>
-        </div>
+        <h3 className="font-semibold text-lg">Others</h3>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">NyanCat</h4>
+            <Badge
+              href="https://github.com/table-harmony/nyan-cat"
+              icon={<Icons.github className="h-3 w-3" />}
+              content="Github"
+            />
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Awesome and made of only CSS and HTML
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">Cards</h4>
+            <Badge
+              href="https://github.com/table-harmony/cards"
+              icon={<Icons.github className="h-3 w-3" />}
+              content="Github"
+            />
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Heavily inspired from Hyperplexed, Made from HTML, CSS and JS
+          </footer>
+        </article>
       </section>
     </main>
   );

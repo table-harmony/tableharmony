@@ -1,9 +1,9 @@
-import { LinkedinIcon } from "lucide-react";
+import { CodeXmlIcon, LinkedinIcon } from "lucide-react";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  gitHub: (props: IconProps) => (
+  github: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
         fill="currentColor"
@@ -11,5 +11,11 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  vercel: (props: IconProps) => (
+    <svg viewBox="0 0 24 24" {...props}>
+      <path d="M24 22.525H0l12-21.05 12 21.05z" fill="currentColor" />
+    </svg>
+  ),
+  hyperplexed: (props: IconProps) => <CodeXmlIcon {...props} />,
   linkedin: (props: IconProps) => <LinkedinIcon {...props} />,
 };
