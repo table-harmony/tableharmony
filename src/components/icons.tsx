@@ -16,6 +16,6 @@ export const Icons = {
       <path d="M24 22.525H0l12-21.05 12 21.05z" fill="currentColor" />
     </svg>
   ),
-  hyperplexed: (props: IconProps) => <CodeXmlIcon {...props} />,
+  html: (props: IconProps) => <CodeXmlIcon {...props} />,
   linkedin: (props: IconProps) => <LinkedinIcon {...props} />,
 };

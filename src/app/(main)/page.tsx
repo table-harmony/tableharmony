@@ -104,11 +104,18 @@ export default function HomePage() {
         <article className="flex flex-col gap-2">
           <header className="flex items-center justify-between">
             <h4 className="underline underline-offset-4">NyanCat</h4>
-            <Badge
-              href="https://github.com/table-harmony/nyan-cat"
-              icon={<Icons.github className="h-3 w-3" />}
-              content="Github"
-            />
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/nyan-cat"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://table-harmony.github.io/nyan-cat/"
+                icon={<Icons.html className="h-3 w-3" />}
+                content="Github pages"
+              />
+            </div>
           </header>
           <footer className="text-muted-foreground text-sm">
             Awesome and made of only CSS and HTML
@@ -117,11 +124,18 @@ export default function HomePage() {
         <article className="flex flex-col gap-2">
           <header className="flex items-center justify-between">
             <h4 className="underline underline-offset-4">Cards</h4>
-            <Badge
-              href="https://github.com/table-harmony/cards"
-              icon={<Icons.github className="h-3 w-3" />}
-              content="Github"
-            />
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/cards"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://table-harmony.github.io/cards"
+                icon={<Icons.html className="h-3 w-3" />}
+                content="Github pages"
+              />
+            </div>
           </header>
           <footer className="text-muted-foreground text-sm">
             Heavily inspired from Hyperplexed, Made from HTML, CSS and JS
