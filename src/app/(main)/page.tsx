@@ -24,7 +24,7 @@ export default function HomePage() {
             </div>
           </header>
           <footer className="text-muted-foreground text-sm">
-            Bagrut project at the Alliance computer science program
+            Matriculation project at the Alliance computer science program
           </footer>
         </article>
         <article className="flex flex-col gap-2">
