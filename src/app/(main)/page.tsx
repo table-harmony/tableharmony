@@ -24,7 +24,7 @@ export default function HomePage() {
             </div>
           </header>
           <footer className="text-muted-foreground text-sm">
-            Bagrut project at the Alliance computer science program
+            Matriculation project at the Alliance computer science program
           </footer>
         </article>
         <article className="flex flex-col gap-2">
@@ -78,6 +78,46 @@ export default function HomePage() {
           </header>
           <footer className="text-muted-foreground text-sm">
             Gaming hub plenty of games
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">DisHarmony</h4>
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/disharmony"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://disharmony.vercel.app/"
+                icon={<Icons.vercel className="h-3 w-3" />}
+                content="Vercel"
+              />
+            </div>
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Discord clone
+          </footer>
+        </article>
+        <article className="flex flex-col gap-2">
+          <header className="flex items-center justify-between">
+            <h4 className="underline underline-offset-4">KitHarmony</h4>
+            <div className="flex gap-2">
+              <Badge
+                href="https://github.com/table-harmony/kitharmony"
+                icon={<Icons.github className="h-3 w-3" />}
+                content="Github"
+              />
+              <Badge
+                href="https://kitharmony.vercel.app/"
+                icon={<Icons.vercel className="h-3 w-3" />}
+                content="Vercel"
+              />
+            </div>
+          </header>
+          <footer className="text-muted-foreground text-sm">
+            Plenty of starter kits for developers
           </footer>
         </article>
       </section>
