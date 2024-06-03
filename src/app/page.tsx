@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col gap-4">
       <section className="flex flex-col gap-4">
-        <h3 className="font-semibold text-lg">Harmonial Projects</h3>
+        <h3 className="text-lg font-semibold">Harmonial Projects</h3>
         <Item
           title="DevHarmony"
           subtitle="Matriculation project at the Alliance computer science program"
@@ -34,7 +34,7 @@ export default function HomePage() {
       </section>
       <Separator />
       <section className="flex flex-col gap-4">
-        <h3 className="font-semibold text-lg">Game Projects</h3>
+        <h3 className="text-lg font-semibold">Game Projects</h3>
         <Item
           title="GamingAdventures"
           subtitle="Cool games using python library PYGAME"
@@ -43,7 +43,7 @@ export default function HomePage() {
       </section>
       <Separator />
       <section className="flex flex-col gap-4">
-        <h3 className="font-semibold text-lg">Extra Projects</h3>
+        <h3 className="text-lg font-semibold">Extra Projects</h3>
         <Item
           title="NyanCat"
           subtitle="Made only using CSS and HTML"
@@ -76,7 +76,7 @@ function Item({ title, subtitle, to }: ItemProps) {
       >
         {title}
       </Link>
-      <p className="text-muted-foreground text-sm">{subtitle}</p>
+      <p className="text-sm text-muted-foreground">{subtitle}</p>
     </div>
   );
 }

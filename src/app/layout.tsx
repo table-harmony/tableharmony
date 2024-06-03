@@ -38,12 +38,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ContextProvider>
           <div className="relative flex min-h-screen flex-col bg-background">
-            <div className="container max-w-2xl mt-16 flex flex-col gap-10">
+            <div className="container mt-16 flex max-w-2xl flex-col gap-10">
               <SiteHeader />
               {children}
               <SiteFooter />

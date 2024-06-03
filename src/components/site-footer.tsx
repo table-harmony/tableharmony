@@ -16,7 +16,7 @@ export function SiteFooter() {
               buttonVariants({
                 variant: "ghost",
               }),
-              "w-9 px-0"
+              "w-9 px-0",
             )}
           >
             <Icons.linkedin className="h-4 w-4" />
@@ -29,7 +29,7 @@ export function SiteFooter() {
               buttonVariants({
                 variant: "ghost",
               }),
-              "w-9 px-0"
+              "w-9 px-0",
             )}
           >
             <Icons.github className="h-4 w-4" />
