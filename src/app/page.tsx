@@ -7,9 +7,14 @@ export default function HomePage() {
       <section className="flex flex-col gap-4">
         <h3 className="text-lg font-semibold">Harmonial Projects</h3>
         <Item
-          title="DevHarmony"
+          title="CalendarHarmony"
           subtitle="Matriculation project at the Alliance computer science program"
-          to="https://devharmony.vercel.app"
+          to="https://calendarharmony.vercel.app"
+        />
+        <Item
+          title="ProjectHarmony"
+          subtitle="Manage your projects in one place"
+          to="https://projectharmony.vercel.app"
         />
         <Item
           title="BlogHarmony"
