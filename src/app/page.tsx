@@ -7,6 +7,11 @@ export default function HomePage() {
       <section className="flex flex-col gap-4">
         <h3 className="text-lg font-semibold">Harmonial Projects</h3>
         <Item
+          title="KitHarmony"
+          subtitle="Starter kits for developers"
+          to="https://kitharmony.vercel.app"
+        />
+        <Item
           title="CalendarHarmony"
           subtitle="Matriculation project at the Alliance computer science program"
           to="https://calendarharmony.vercel.app"
@@ -25,11 +30,6 @@ export default function HomePage() {
           title="DisHarmony"
           subtitle="Socialize via voice chats and more"
           to="https://disharmony.vercel.app"
-        />
-        <Item
-          title="KitHarmony"
-          subtitle="Starter kits for developers"
-          to="https://kitharmony.vercel.app"
         />
         <Item
           title="MoviesHarmony"
