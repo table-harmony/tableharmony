@@ -12,11 +12,6 @@ export default function HomePage() {
           to="https://calendarharmony.vercel.app"
         />
         <Item
-          title="ProjectHarmony"
-          subtitle="Manage your projects in one place"
-          to="https://projectharmony.vercel.app"
-        />
-        <Item
           title="BlogHarmony"
           subtitle="Blog with authors followers and more"
           to="https://blogharmony.vercel.app"
@@ -35,6 +30,11 @@ export default function HomePage() {
           title="KitHarmony"
           subtitle="Starter kits for developers"
           to="https://kitharmony.vercel.app"
+        />
+        <Item
+          title="MoviesHarmony"
+          subtitle="Movies to watch"
+          to="https://moviesharmony.vercel.app"
         />
       </section>
       <Separator />
