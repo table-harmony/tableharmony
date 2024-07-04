@@ -5,16 +5,16 @@ export default function HomePage() {
   return (
     <main className="flex flex-col gap-4">
       <section className="flex flex-col gap-4">
-        <h3 className="text-lg font-semibold">Harmonial Projects</h3>
+        <p className="text-lg font-semibold">Harmonial Projects</p>
+        <Item
+          title="DevHarmony"
+          subtitle="Matriculation project at the Alliance computer science program"
+          to="https://devharmony.vercel.app"
+        />
         <Item
           title="KitHarmony"
           subtitle="Starter kits for developers"
           to="https://kitharmony.vercel.app"
-        />
-        <Item
-          title="CalendarHarmony"
-          subtitle="Matriculation project at the Alliance computer science program"
-          to="https://calendarharmony.vercel.app"
         />
         <Item
           title="BlogHarmony"
