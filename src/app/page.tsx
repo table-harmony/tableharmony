@@ -8,8 +8,8 @@ export default function HomePage() {
         <p className="text-lg font-semibold">Harmonial Projects</p>
         <Item
           title="DevHarmony"
-          subtitle="Matriculation project at the Alliance computer science program"
-          to="https://devharmony.vercel.app"
+          subtitle="Final project at the Alliance computer science program"
+          to="https://devharmony.vercel.app/"
         />
         <Item
           title="KitHarmony"
@@ -30,11 +30,6 @@ export default function HomePage() {
           title="DisHarmony"
           subtitle="Socialize via voice chats and more"
           to="https://disharmony.vercel.app"
-        />
-        <Item
-          title="MoviesHarmony"
-          subtitle="Movies to watch"
-          to="https://moviesharmony.vercel.app"
         />
       </section>
       <Separator />
