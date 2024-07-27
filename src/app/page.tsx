@@ -4,6 +4,11 @@ import { Separator } from "@/components/ui/separator";
 export default function HomePage() {
   return (
     <main className="flex flex-col gap-4">
+      <Item
+        title="One Million Checkboxes"
+        subtitle="Inspired by eieio.games"
+        to="https://onemillioncheckboxes.vercel.app/"
+      />
       <section className="flex flex-col gap-4">
         <p className="text-lg font-semibold">Harmonial Projects</p>
         <Item
