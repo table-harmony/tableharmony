@@ -1,15 +1,13 @@
-import { ModeToggle } from "@/components/mode-toggle";
+import Link from "next/link";
 
 export function SiteHeader() {
   return (
-    <header className="flex h-14 items-center justify-between">
-      <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-black">TableHarmony</h1>
-        <h2 className="text-sm font-semibold text-muted-foreground">
-          Web developer
-        </h2>
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 py-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-14 items-center justify-between">
+        <Link href="/" className="text-lg font-medium lg:text-2xl">
+          Table Harmony
+        </Link>
       </div>
-      <ModeToggle />
     </header>
   );
 }

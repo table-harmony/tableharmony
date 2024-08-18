@@ -57,3 +57,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-gradient {
+  background: linear-gradient(90deg, #f6673f 0%, #f6883f 100%);
+  /* background: linear-gradient(83.21deg,#3245ff 0%,#bc52ee 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
