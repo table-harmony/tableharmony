@@ -10,6 +10,8 @@ import { ContextProvider } from "@/components/context-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
+import NextToploader from "nextjs-toploader";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -44,6 +46,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <ContextProvider>
           <div className="relative flex min-h-screen flex-col bg-background">
+            <NextToploader showSpinner={false} />
+
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
