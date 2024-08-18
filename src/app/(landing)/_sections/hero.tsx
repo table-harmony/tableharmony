@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="container py-8 md:py-12 md:pb-8 lg:py-20">
+    <section className="container py-8 md:py-12 md:pb-8 lg:my-20">
       <div className="flex flex-col items-center justify-around md:flex-row">
         <div className="space-y-8">
           <Separator className="h-1 w-[100px] rounded-md bg-orange-500" />
@@ -21,7 +21,7 @@ export function HeroSection() {
           <Button size="lg">Button</Button>
         </div>
 
-        <Image src="/logo.jpg" alt="hero" width="400" height="400" />
+        <Image src="/hero.png" alt="hero" width="400" height="400" />
       </div>
     </section>
   );

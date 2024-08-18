@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MenuButton } from "./menu-button";
 
 export function SiteHeader() {
   return (
@@ -7,6 +8,7 @@ export function SiteHeader() {
         <Link href="/" className="text-lg font-medium lg:text-2xl">
           Table Harmony
         </Link>
+        <MenuButton />
       </div>
     </header>
   );
