@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "tableharmony",
+  name: "Liron Kaner",
   url: "https://tableharmony.io",
   author: "liron kaner",
   description: "portfolio",

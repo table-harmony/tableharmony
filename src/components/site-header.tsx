@@ -1,16 +1,25 @@
-import Link from "next/link";
+import Image from "next/image";
+import { ModeToggle } from "./mode-toggle";
+import { siteConfig } from "@/config/site";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 py-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="flex flex-col text-lg font-bold leading-[24px]">
-            <span>Table</span>
-            <span>Harmony</span>
-          </div>
-        </Link>
+    <header className="mb-10 flex items-center justify-between md:mb-16 md:px-6">
+      <div className="flex items-center space-x-3">
+        <Image
+          src="/logo.jpg"
+          alt="profile"
+          width={100}
+          height={100}
+          className="size-12 rounded-md"
+          priority
+        />
+        <div className="flex flex-col">
+          <span className="text-lg font-semibold">{siteConfig.name}</span>
+          <span className="text-muted-foreground">Software engineer</span>
+        </div>
       </div>
+      <ModeToggle />
     </header>
   );
 }

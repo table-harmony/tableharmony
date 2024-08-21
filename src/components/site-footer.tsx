@@ -1,31 +1,26 @@
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 export function SiteFooter() {
   return (
-    <footer className="py-6 md:px-8 md:py-0">
-      <div className="container flex flex-row items-center justify-between gap-4 md:h-24">
-        <p className="text-balance text-sm leading-loose text-muted-foreground">
-          Built by{" "}
+    <footer className="mt-10 py-6 md:mt-16 md:px-8 md:py-0">
+      <div className="flex items-center justify-center gap-2">
+        <Button variant="ghost" size="icon" asChild>
+          <Link target="_blank" rel="noreferrer" href={siteConfig.links.github}>
+            <GithubIcon className="size-4" />
+          </Link>
+        </Button>
+        <Button variant="ghost" size="icon" asChild>
           <Link
-            href="https://tableharmony.io"
             target="_blank"
             rel="noreferrer"
-            className="font-semibold underline underline-offset-4"
+            href={siteConfig.links.linkedin}
           >
-            TableHarmony
+            <LinkedinIcon className="size-4" />
           </Link>
-          . The source code is available on{" "}
-          <Link
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="font-semibold underline underline-offset-4"
-          >
-            GitHub
-          </Link>
-          .
-        </p>
+        </Button>
       </div>
     </footer>
   );

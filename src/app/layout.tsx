@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Rubik as FontSans } from "next/font/google";
+import { Poppins as FontSans } from "next/font/google";
 
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
@@ -7,13 +7,13 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ContextProvider } from "@/components/context-provider";
 
+import NextToploader from "nextjs-toploader";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-import NextToploader from "nextjs-toploader";
-
 const fontSans = FontSans({
   subsets: ["latin"],
+  weight: ["400"],
   variable: "--font-sans",
 });
 
@@ -47,11 +47,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ContextProvider>
           <div className="relative flex min-h-screen flex-col bg-background">
             <NextToploader showSpinner={false} />
-
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
+            <div className="mx-auto mb-20 w-full max-w-3xl px-4 pt-4 md:pt-10 lg:px-20">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </div>
           </div>
+
+          <div className="pointer-events-none fixed bottom-0 left-0 hidden h-28 w-full bg-primary-foreground [mask-image:linear-gradient(transparent,#000000)] dark:block" />
         </ContextProvider>
       </body>
     </html>
