@@ -11,7 +11,7 @@ export function SiteHeader() {
           alt="profile"
           width={100}
           height={100}
-          className="size-12 rounded-md"
+          className="size-12 select-none rounded-md"
           priority
         />
         <div className="flex flex-col">
@@ -19,7 +19,9 @@ export function SiteHeader() {
           <span className="text-muted-foreground">Software engineer</span>
         </div>
       </div>
-      <ModeToggle />
+      <div className="px-1">
+        <ModeToggle />
+      </div>
     </header>
   );
 }

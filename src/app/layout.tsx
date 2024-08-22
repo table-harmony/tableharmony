@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import { Poppins as FontSans } from "next/font/google";
 
 import { Metadata, Viewport } from "next";
@@ -45,16 +45,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ContextProvider>
-          <div className="relative flex min-h-screen flex-col bg-background">
-            <NextToploader showSpinner={false} />
-            <div className="mx-auto mb-20 w-full max-w-3xl px-4 pt-4 md:pt-10 lg:px-20">
+          <div className="mx-auto w-full max-w-3xl px-4 pt-4 md:pt-10 lg:px-20">
+            <div className="relative flex min-h-screen flex-col bg-background">
+              <NextToploader showSpinner={false} />
               <SiteHeader />
               <main className="flex-1">{children}</main>
               <SiteFooter />
             </div>
           </div>
 
-          <div className="pointer-events-none fixed bottom-0 left-0 hidden h-28 w-full bg-primary-foreground [mask-image:linear-gradient(transparent,#000000)] dark:block" />
+          <div className="pointer-events-none bottom-0 left-0 hidden h-28 w-full bg-primary-foreground [mask-image:linear-gradient(transparent,#000000)] dark:block md:fixed" />
         </ContextProvider>
       </body>
     </html>

@@ -1,4 +1,4 @@
-import { projects } from "@/config/projects";
+import { projects } from "@/config/site";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -16,28 +16,38 @@ export default function LandingPage() {
       </div>
 
       <div className="space-y-3">
-        <span className="font-semibold">Features projects</span>
-        {projects.map((project) => (
-          <Link
-            key={project.name}
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="project"
-            className="flex items-center gap-4 rounded-md p-3 px-4 transition hover:bg-muted"
-          >
-            <Image src={project.image} alt="project" width="45" height="45" />
-            <div className="flex flex-col">
-              <span>{project.name}</span>
-              <span className="text-muted-foreground">
-                {project.description}
-              </span>
-            </div>
-          </Link>
-        ))}
+        <span className="font-semibold">Featured projects</span>
+        {projects
+          .filter((project) => project.featured)
+          .map((project) => (
+            <Link
+              key={project.name}
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="project"
+              className="flex items-center gap-4 rounded-md p-3 px-4 transition hover:bg-muted"
+            >
+              <Image src={project.image} alt="project" width="45" height="45" />
+              <div className="flex flex-col">
+                <span>{project.name}</span>
+                <span className="text-muted-foreground">
+                  {project.description}
+                </span>
+              </div>
+            </Link>
+          ))}
 
         <Button variant="link" className="w-full justify-end">
           <Link href="/projects">All projects</Link>
+        </Button>
+      </div>
+
+      <div className="space-y-3">
+        <span className="font-semibold">Featured techs</span>
+
+        <Button variant="link" className="w-full justify-end">
+          <Link href="/techs">All techs</Link>
         </Button>
       </div>
     </div>
