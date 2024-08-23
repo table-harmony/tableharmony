@@ -2,7 +2,7 @@ import { techs } from "@/config/site";
 import Image from "next/image";
 
 export default function TechsPage() {
-  const categories: string[] = ["frondend", "backend", "database"];
+  const categories: string[] = ["frontend", "backend", "database"];
 
   return (
     <div className="space-y-14">
