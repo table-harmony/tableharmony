@@ -43,4 +43,66 @@ export const projects = [
   },
 ];
 
-export const techs = {};
+export const techs = [
+  {
+    featured: true,
+    name: "React",
+    description:
+      "Building interactive UIs for dynamic web applications over 2 years.",
+    image: "/icons/techs/react.svg",
+    category: "frontend",
+  },
+  {
+    featured: true,
+    name: "Next.js",
+    description:
+      "Developing server-side rendered and statically generated web apps for 2 years.",
+    image: "/icons/techs/nextjs.svg",
+    category: "frontend",
+  },
+  {
+    featured: false,
+    name: "Astro",
+    description:
+      "Crafting high-performance, content-focused websites with Astro.",
+    image: "/icons/techs/astro.svg",
+    category: "frontend",
+  },
+  {
+    featured: false,
+    name: "Drizzle",
+    description: "Creating scalable backend solutions with Drizzle ORM.",
+    image: "/icons/techs/drizzle.svg",
+    category: "backend",
+  },
+  {
+    featured: false,
+    name: "Prisma",
+    description: "Designing and managing robust databases with Prisma.",
+    image: "/icons/techs/prisma.svg",
+    category: "backend",
+  },
+  {
+    featured: true,
+    name: "Postgresql",
+    description:
+      "Implementing and maintaining relational databases with PostgreSQL.",
+    image: "/icons/techs/postgres.svg",
+    category: "database",
+  },
+  {
+    featured: false,
+    name: "Mongodb",
+    description: "Utilizing MongoDB for flexible, scalable NoSQL data storage.",
+    image: "/icons/techs/mongo.svg",
+    category: "database",
+  },
+  {
+    featured: true,
+    name: "Convex",
+    description:
+      "Developing real-time, serverless database applications with Convex.",
+    image: "/icons/techs/convex.svg",
+    category: "database",
+  },
+];

@@ -1,4 +1,4 @@
-import { projects } from "@/config/site";
+import { projects, techs } from "@/config/site";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -38,7 +38,7 @@ export default function LandingPage() {
             </Link>
           ))}
 
-        <Button variant="link" className="w-full justify-end">
+        <Button variant="link" className="w-full justify-end" asChild>
           <Link href="/projects">All projects</Link>
         </Button>
       </div>
@@ -46,7 +46,30 @@ export default function LandingPage() {
       <div className="space-y-3">
         <span className="font-semibold">Featured techs</span>
 
-        <Button variant="link" className="w-full justify-end">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          {techs
+            .filter((tech) => tech.featured)
+            .map((tech) => (
+              <div
+                key={tech.name}
+                className="cursor-pointer rounded-lg border p-4 hover:border-primary hover:duration-200"
+              >
+                <div className="flex flex-row items-center space-x-4">
+                  <Image
+                    alt="tech picture"
+                    src={tech.image}
+                    width="50"
+                    height="50"
+                  />
+                  <div className="flex flex-col overflow-hidden">
+                    <span className="font-bold text-primary">{tech.name}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+
+        <Button variant="link" className="w-full justify-end" asChild>
           <Link href="/techs">All techs</Link>
         </Button>
       </div>
