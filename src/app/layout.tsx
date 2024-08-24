@@ -18,7 +18,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: "TableHarmony",
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
 };
