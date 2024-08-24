@@ -105,4 +105,12 @@ export const techs = [
     image: "/icons/techs/convex.svg",
     category: "database",
   },
+  {
+    featured: false,
+    name: "Redis",
+    description:
+      "Experience in using Redis for in-memory data storage and caching to improve application performance.",
+    image: "/icons/techs/redis.svg",
+    category: "database",
+  },
 ];
