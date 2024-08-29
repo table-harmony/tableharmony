@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export function SiteHeader() {
   return (
-    <header className="mb-10 flex items-center justify-between md:mb-16 md:px-6">
+    <header className="animate-slide-from-down-and-fade-1 mb-10 flex items-center justify-between md:mb-16 md:px-6">
       <div className="flex items-center space-x-3">
         <Image
           src="/logo.jpg"

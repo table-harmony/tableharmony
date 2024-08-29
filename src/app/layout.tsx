@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 import { ContextProvider } from "@/components/context-provider";
 
 import NextToploader from "nextjs-toploader";
+import { TopScroll } from "@/components/top-scroll";
 import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="mx-auto w-full max-w-3xl px-4 pt-4 md:pt-10 lg:px-20">
             <div className="relative flex min-h-screen flex-col bg-background">
               <NextToploader showSpinner={false} />
-              <SiteHeader />
+              <TopScroll />
               <main className="flex-1">{children}</main>
               <SiteFooter />
             </div>
