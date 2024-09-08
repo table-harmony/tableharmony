@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { ContextProvider } from "@/components/context-provider";
 
 import NextToploader from "nextjs-toploader";
-import { TopScroll } from "@/components/top-scroll";
 import { SiteFooter } from "@/components/site-footer";
 
 const fontSans = FontSans({
@@ -37,7 +36,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -48,7 +49,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="mx-auto w-full max-w-3xl px-4 pt-4 md:pt-10 lg:px-20">
             <div className="relative flex min-h-screen flex-col bg-background">
               <NextToploader showSpinner={false} />
-              <TopScroll />
               <main className="flex-1">{children}</main>
               <SiteFooter />
             </div>
