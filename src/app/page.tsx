@@ -35,8 +35,8 @@ export default function LandingPage() {
                 <Image
                   src={project.image}
                   alt="project"
-                  width="45"
-                  height="45"
+                  width={45}
+                  height={45}
                 />
                 <div className="flex flex-col">
                   <span>{project.name}</span>
