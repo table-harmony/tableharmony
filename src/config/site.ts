@@ -21,13 +21,6 @@ export const projects = [
     link: "https://devharmony.io/",
   },
   {
-    featured: true,
-    name: "AspHarmony",
-    description: "Final project of computer science class at Alliance",
-    image: "/icons/aspharmony.png",
-    link: "https://github.com/table-harmony/aspharmony",
-  },
-  {
     featured: false,
     name: "KitHarmony",
     description: "Modern, fully built and polished stacks.",
@@ -47,6 +40,20 @@ export const projects = [
     description: "All my old python games.",
     image: "/icons/gaming.webp",
     link: "https://github.com/table-harmony/gamingadventures",
+  },
+  {
+    featured: false,
+    name: "AspHarmony",
+    description: "Final project of computer science class at Alliance",
+    image: "/icons/aspharmony.png",
+    link: "https://github.com/table-harmony/aspharmony",
+  },
+  {
+    featured: true,
+    name: "ConvertHarmony",
+    description: "Image converter to various formats.",
+    image: "/icons/convertharmony.webp",
+    link: "https://convertharmony.vercel.app/",
   },
 ];
 
