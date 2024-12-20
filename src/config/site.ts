@@ -50,10 +50,10 @@ export const projects = [
   },
   {
     featured: true,
-    name: "ConvertHarmony",
-    description: "Image converter to various formats.",
+    name: "Conify",
+    description: "A free online tool for converting files to various formats.",
     image: "/icons/convertharmony.webp",
-    link: "https://convertharmony.vercel.app/",
+    link: "https://conify.vercel.app/",
   },
 ];
 
